@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saung Kuliner</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; }
+    .hero {
+      padding: 100px 0;
+    }
+    .card {
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .rating { color: #f1c40f; }
+    footer { background: #198754; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="#">Saung Kuliner</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero container d-flex align-items-center" style="min-height:100vh;">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="fw-bold mb-4">Nikmati Masakan <span class="text-success">Lezat & Tradisional</span></h1>
+        <p class="lead text-muted mb-4">
+          Saung Kuliner menghadirkan berbagai makanan dan minuman khas Indonesia dengan rasa otentik dan harga bersahabat.
+        </p>
+        <a href="#menu" class="btn btn-success btn-lg">Lihat Menu</a>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="fotokuliner.jpeg" alt="Kuliner" class="img-fluid rounded">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+<section id="menu" class="container py-5">
+  <h2 class="fw-bold text-center mb-5">Menu Kami</h2>
+  
+  <!-- Tabs -->
+  <ul class="nav nav-tabs justify-content-center" id="menuTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="populer-tab" data-bs-toggle="tab" data-bs-target="#populer" type="button" role="tab">Populer</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="makanan-tab" data-bs-toggle="tab" data-bs-target="#makanan" type="button" role="tab">Makanan</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="minuman-tab" data-bs-toggle="tab" data-bs-target="#minuman" type="button" role="tab">Minuman</button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content pt-4" id="menuTabsContent">
+    
+    <!-- Populer -->
+    <div class="tab-pane fade show active" id="populer" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img src="https://source.unsplash.com/400x300/?nasi-goreng" class="card-img-top" alt="Nasi Goreng">
+            <div class="card-body">
+              <h5 class="card-title">Nasi Goreng</h5>
+              <p class="text-success fw-bold">Rp 20.000</p>
+              <div class="rating">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img src="https://source.unsplash.com/400x300/?sate" class="card-img-top" alt="Sate Ayam">
+            <div class="card-body">
+              <h5 class="card-title">Sate Ayam</h5>
+              <p class="text-success fw-bold">Rp 25.000</p>
+              <div class="rating">★★★★☆</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Makanan -->
+    <div class="tab-pane fade" id="makanan" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img src="https://source.unsplash.com/400x300/?soto" class="card-img-top" alt="Soto Ayam">
+            <div class="card-body">
+              <h5 class="card-title">Soto Ayam</h5>
+              <p class="text-success fw-bold">Rp 22.000</p>
+              <div class="rating">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img src="https://source.unsplash.com/400x300/?ayam-bakar" class="card-img-top" alt="Ayam Bakar">
+            <div class="card-body">
+              <h5 class="card-title">Ayam Bakar</h5>
+              <p class="text-success fw-bold">Rp 28.000</p>
+              <div class="rating">★★★★☆</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Minuman -->
+    <div class="tab-pane fade" id="minuman" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img src="https://source.unsplash.com/400x300/?es-teh" class="card-img-top" alt="Es Teh Manis">
+            <div class="card-body">
+              <h5 class="card-title">Es Teh Manis</h5>
+              <p class="text-success fw-bold">Rp 5.000</p>
+              <div class="rating">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img src="https://source.unsplash.com/400x300/?es-jeruk" class="card-img-top" alt="Es Jeruk">
+            <div class="card-body">
+              <h5 class="card-title">Es Jeruk Segar</h5>
+              <p class="text-success fw-bold">Rp 7.000</p>
+              <div class="rating">★★★★☆</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Apa Kata Mereka</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow">
+            <div class="card-body">
+              <p class="fst-italic" id="testimoniText">"Makanannya luar biasa enak!"</p>
+              <div class="rating mb-2" id="testimoniStars">★★★★★</div>
+              <p class="fw-bold" id="testimoniNama">- Andi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+<section id="about" class="container py-5 text-center">
+  <h2 class="fw-bold mb-4">Tentang Saung Kuliner</h2>
+  <p class="text-muted mx-auto mb-4" style="max-width:700px;">
+    Saung Kuliner hadir untuk memberikan pengalaman kuliner yang tak terlupakan di Karawang, Jawa Barat. 
+    Kami menyajikan berbagai makanan khas Nusantara dengan cita rasa otentik, bahan berkualitas, 
+    serta suasana nyaman yang cocok untuk keluarga, teman, maupun acara khusus Anda.
+  </p>
+  
+  <!-- Maps -->
+  <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.399027652348!2d107.30503707476716!3d-6.345089762043531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e693f90cccd13b7%3A0x401e8f1fc28c570!2sKarawang%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1698232222222!5m2!1sid!2sid" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4">Hubungi Kami</h2>
+      <p class="text-muted">Ingin memesan atau tanya-tanya? Klik tombol di bawah untuk chat via WhatsApp</p>
+      <a href="https://wa.me/6285157996915" target="_blank" class="btn btn-success btn-lg">Chat via WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3">
+    <p class="mb-0">&copy; 2025 Saung Kuliner. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const testimoniData = [
+      { text: '"Makanannya enak banget, porsinya pas."', stars: '★★★★★', nama: '- Andi' },
+      { text: '"Pelayanan cepat dan ramah, recommended."', stars: '★★★★☆', nama: '- Siti' },
+      { text: '"Tempat favorit keluarga untuk makan malam."', stars: '★★★★★', nama: '- Budi' }
+    ];
+    let index = 0;
+    setInterval(() => {
+      index = (index + 1) % testimoniData.length;
+      document.getElementById('testimoniText').innerText = testimoniData[index].text;
+      document.getElementById('testimoniStars').innerText = testimoniData[index].stars;
+      document.getElementById('testimoniNama').innerText = testimoniData[index].nama;
+    }, 3000);
+  </script>
+</body>
+</html>
